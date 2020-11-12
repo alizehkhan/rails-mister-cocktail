@@ -22,6 +22,10 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 5.12.0'
+gem 'simple_form'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -47,6 +51,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+gem 'rails-controller-testing', group: [ :test ]
+gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
 gem 'rspec-rails', '4.0.0.beta3', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
