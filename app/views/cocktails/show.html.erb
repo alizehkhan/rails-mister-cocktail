@@ -1,0 +1,20 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/collection/3468732);">
+  <div class="container">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <h2>Ingredients</h2>
+    <% @cocktail.doses.each do |dose| %>
+    <div class="card-product">
+      <img src="https://source.unsplash.com/collection/4485117/cocktail" />
+      <div class="card-product-infos">
+        <h2><%= dose.ingredient.name %></h2>
+        <p><%= dose.description %></p>
+      </div>
+    </div>
+    <% end %>
+  <br>
+  <%= link_to "+ ingredient", new_cocktail_dose_path(@cocktail)%>
+</div>
