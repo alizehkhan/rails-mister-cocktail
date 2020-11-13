@@ -6,8 +6,10 @@
 
 <div class="container mt-3">
   <h2>Ingredients</h2>
+  <div class="row">
+    <div class="col-6">
     <% @cocktail.doses.each do |dose| %>
-    <div class="card-product">
+    <div class="card-product mt-3">
       <img src="https://source.unsplash.com/collection/4485117/cocktail" />
       <div class="card-product-infos">
         <h2><%= dose.ingredient.name %></h2>
@@ -15,6 +17,8 @@
       </div>
     </div>
     <% end %>
+    </div>
+  </div>
   <br>
   <%= link_to "+ ingredient", new_cocktail_dose_path(@cocktail)%>
 </div>
